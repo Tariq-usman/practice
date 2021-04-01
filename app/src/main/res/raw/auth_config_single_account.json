@@ -1,0 +1,13 @@
+{
+  "client_id": "5156d80e-fd7a-4a58-a8bb-9258e3b38c1a",
+  "authorization_user_agent": "DEFAULT",
+  "redirect_uri": "msauth://com.example.practice/zmPB2OQZxhxhSHnN4woKDHZG1hE%3D",
+  "account_mode" : "SINGLE",
+  "broker_redirect_uri_registered": true,
+  "authorities" : [
+    {
+      "type": "AAD",
+      "authority_url": "https://login.microsoftonline.com/common"
+    }
+  ]
+}
