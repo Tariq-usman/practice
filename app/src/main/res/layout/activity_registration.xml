@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".RegistrationActivity">
 
     <ProgressBar
-        android:id="@+id/progress_horizontal_login"
+        android:id="@+id/progress_horizontal"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,34 +22,49 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+        <ImageView
+            android:id="@+id/ivUserReg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_settings"
+            app:tint="@color/black" />
 
         <EditText
-            android:id="@+id/etPass"
+            android:id="@+id/etNameReg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="text"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/etEmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/etPassReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="Password" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnCreateNewReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Create Account"
             android:textAllCaps="false" />
 
         <Button
-            android:id="@+id/btnNewAcc"
+            android:id="@+id/btnGoBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create New Account"
+            android:text="Go Back"
             android:textAllCaps="false" />
     </LinearLayout>
 </LinearLayout>
